@@ -1,0 +1,18 @@
+# 공개 참고 자료와 실제 작업 기록을 분리한다.
+work-notes/
+private/
+work/
+tmp/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.*
+secrets.*
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+# 이미 추적된 파일과 문서 본문까지 보호하지는 않는다.
