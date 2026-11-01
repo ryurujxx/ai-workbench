@@ -5,8 +5,9 @@
 ## 빈 양식
 
 - 프로젝트 작업공간:
+- 참고 폴더·START 접근: 읽기 가능/불가/미확인, 확인 방법
 - 정본 STATUS 경로:
-- 문서별 정본 경로: REQUIREMENTS / DECISIONS / VERIFICATION / MVP_REPORT
+- 문서별 정본 경로·접근 상태: REQUIREMENTS / DECISIONS / VERIFICATION / MVP_REPORT
 - 현재 목표와 합의 범위:
 - 완료 작업과 근거:
 - 진행 작업:
@@ -16,12 +17,14 @@
 - 관련 파일·실행/검증 명령:
 - 외부 자료: 원본·확인 버전/날짜·실제 경로·적용 범위·등록 상태
 - 사용자 직접 확인 항목과 결과 출처:
+- 마지막 근거 누적 시점: DECISIONS / VERIFICATION / MVP_REPORT
 
 중요한 단계 전환·중단·복원 때 갱신한다. 문서별 경로가 다르면 위 매핑을 정본으로 사용한다.
 
 ## 가상 작성 예
 
 - 정본 STATUS 경로: 프로젝트 안 `work-notes/STATUS.md`
+- 참고 폴더·START 접근: 미확인, 이 예시에서는 실제 경로 확인 안 함
 - 다른 기록: 같은 폴더의 REQUIREMENTS.md, DECISIONS.md, VERIFICATION.md, MVP_REPORT.md
 - 현재 목표: EX-R1~EX-R4 정의
 - 완료: 가상 답변을 요구사항으로 변환
