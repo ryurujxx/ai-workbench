@@ -42,6 +42,6 @@
 | [Spec Kit](https://github.com/github/spec-kit) | README, Codex 통합 문서, MIT LICENSE | 설치·설정·확장·실행 미검증 |
 | [Superpowers](https://github.com/obra/superpowers) | README, writing-plans 및 verification-before-completion 본문, MIT LICENSE | 하위 스킬 전체·실행·클라이언트 호환성 미검증 |
 
-추가 후보의 공식·원저자 저장소를 우선했다. 인기 수치·사용 후기·대회 성적을 효과의 근거로 삼지 않았다. 확인된 실제 사용 대회 사례는 확보하지 못했으며, 효용 판단은 기능·부담·현재 문서와의 중복에 따른 판단이다. main 링크는 변경될 수 있고 커밋 SHA는 고정하지 않았다.
+추가 후보의 공식·원저자 저장소를 우선했다. 인기 수치·사용 후기·검증되지 않은 성능 주장을 효과의 근거로 삼지 않았다. 확인된 실제 운영 사례는 확보하지 못했으며, 효용 판단은 기능·부담·현재 문서와의 중복에 따른 판단이다. main 링크는 변경될 수 있고 커밋 SHA는 고정하지 않았다.
 
 추정한 OpenAI spreadsheet·doc 경로는 유효한 본문을 확보하지 못해 추가하지 않았다. Anthropic 문서 스킬은 저장소 개요가 source-available과 일반 오픈소스 스킬을 구분하므로, 저장소 전체에 동일한 라이선스가 적용된다고 가정하지 않았다. 해당 문서 스킬 원본은 수록하지 않았다.
