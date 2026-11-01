@@ -10,16 +10,18 @@
 Set-Location -LiteralPath '<PROJECT>'
 Get-Location
 Get-Date -Format o
-git status --short --branch
+if (Test-Path -LiteralPath '.git') { git status --short --branch } else { 'Git 저장소 없음 — 신규 프로젝트로 계속' }
 codex
 ```
 
-기획 담당은 공개 자료 반입과 네트워크가 허용되고 기존 참고 폴더가 없을 때만 `git clone https://github.com/ryurujxx/ai-workbench.git '<REF_DIR>'`를 제안·실행한다. 작업공간이 하나의 창으로 제한되면 `<REF_DIR>`를 프로젝트 내부의 충돌 없는 하위 폴더로 정할 수 있다. 먼저 동명 폴더·중첩 Git·제출 범위·`.gitignore`를 확인하고, 참고 저장소나 실제 작업 기록이 의도치 않게 프로젝트 커밋에 포함되지 않게 한다.
+`Git 저장소 없음`은 오류가 아니라 기존 저장소가 없는 정상적인 신규 프로젝트 상태다. 이 경우 Git 상태를 요구하지 말고 실제 과제 자료 탐색을 계속하며, 저장소 초기화는 과제·환경 정책상 필요할 때만 사용자와 확인한다.
+
+기획 담당은 공개 자료 반입과 네트워크가 허용되고 기존 참고 폴더가 없을 때만 `git clone --branch docs/workflow-evidence-v1 --single-branch https://github.com/ryurujxx/ai-workbench.git '<REF_DIR>'`를 제안·실행한다. 현재 개선본이 기본 브랜치에 있다고 가정하지 않는다. 향후 정식 병합이 확인되면 브랜치 옵션 없는 Clone으로 단순화할 수 있다. 작업공간이 하나의 창으로 제한되면 `<REF_DIR>`를 프로젝트 내부의 충돌 없는 하위 폴더로 정할 수 있다. 먼저 동명 폴더·중첩 Git·제출 범위·`.gitignore`를 확인하고, 참고 저장소나 실제 작업 기록이 의도치 않게 프로젝트 커밋에 포함되지 않게 한다.
 
 기획 세션에 다음을 입력한다.
 
 ```text
-너는 기획 담당이야. 프로젝트 <PROJECT>와 참고 저장소 <REF_DIR>의 실제 접근 여부를 확인해. 참고 저장소가 없으면 공개 자료 반입과 네트워크 정책을 확인하고, 허용될 때만 https://github.com/ryurujxx/ai-workbench 를 기존 파일과 충돌하지 않는 <REF_DIR>에 Clone해. 프로젝트 파일은 기본적으로 읽기 전용으로 다뤄.
+너는 기획 담당이야. 프로젝트 <PROJECT>와 참고 저장소 <REF_DIR>의 실제 접근 여부를 확인해. 프로젝트에 Git 저장소가 없으면 정상적인 신규 프로젝트로 처리하고, Git 명령은 저장소 존재를 확인한 뒤에만 실행해. 참고 저장소가 없으면 공개 자료 반입과 네트워크 정책을 확인하고, 허용될 때만 https://github.com/ryurujxx/ai-workbench 의 docs/workflow-evidence-v1 브랜치를 기존 파일과 충돌하지 않는 <REF_DIR>에 Clone해. 기본 브랜치가 최신 개선본이라고 가정하지 마. 프로젝트 파일은 기본적으로 읽기 전용으로 다뤄.
 
 환경의 공개 자료 반입, Clone/Fetch, Push/PR, 업로드, 외부 API 정책과 제한시간·종료 시각·필수 산출물·평가 기준을 확인해. 현재 시각을 직접 확인할 수 없으면 나에게 물어.
 
