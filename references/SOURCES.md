@@ -12,4 +12,8 @@
 | [GitHub Spec Kit](https://github.com/github/spec-kit) | 명세 기반 개발 흐름 조사 | [MIT 원문](https://github.com/github/spec-kit/blob/main/LICENSE) 확인 |
 | [OpenAI 개발자 명령](https://learn.chatgpt.com/docs/developer-commands?surface=cli) | Codex 입력란과 셸 명령 구분 | 공식 설명 참고, 로컬 실행 검증과 구분 |
 
+선택형 Skill 라이브러리는 기존 WORKFLOW를 기준으로 독자 작성했다. 데이터의 의미·조인 점검은 [hephee r2-data](https://github.com/hephee/hynix-r2-skillset/blob/main/.agents/skills/r2-data/SKILL.md)와 [cofa-toolkit data-quality](https://github.com/B0neh3ad/cofa-toolkit/blob/main/skills/data-quality/SKILL.md), 가설을 분리한 원인 추적은 [cofa-toolkit systematic-debugging](https://github.com/B0neh3ad/cofa-toolkit/blob/main/skills/systematic-debugging/SKILL.md)의 일반 기법을 참고했다. 외부 Skill 본문·코드·양식은 포함하지 않았고, 모든 오류에 강제 적용하거나 고정 재시도 횟수를 요구하는 방식도 채택하지 않았다. 이전에 검토한 [cofa-starter](https://github.com/Iremos/cofa-starter)의 작은 정답·불변조건·다른 경로 검산 아이디어는 기존 WORKFLOW와 함께 검토했다.
+
+저장 경로 판단과 `name`/`description` 형식은 [OpenAI 공식 Skill 안내](https://learn.chatgpt.com/docs/build-skills)를 확인했다. 공식 문서의 탐색 규칙과 실제 Cofa IDE의 호환성 검증은 별개다. `skills/` 직접 읽기를 기본으로 배포하며 자동 등록·하위 에이전트 동작은 검증하지 않았다.
+
 위 도구의 설치·실행 호환성이나 시간 절감 효과는 이 저장소에서 보증하지 않는다. 외부 자료는 환경 정책이 허용할 때만 반입하고, 공개 자료 반입 허용을 내부 자료 반출 허용으로 해석하지 않는다.
